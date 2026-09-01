@@ -1,0 +1,51 @@
+Conditional Statements:-
+
+-> to implement some condition in the code 
+Types:-
+    if, if-else,
+
+if Statements
+Syntex:-
+   if(expression)// in this writing the logic
+     {
+
+     }//close of if   
+---------------------------------------------------
+if-else Statements:-
+Syntex:-
+   if()
+   {
+
+   }//close of if
+   if else(expression)// in this writing the logic
+   {
+    
+   }//close of if else
+-----------------------------------------------------   
+===================================================================
+switch Statements
+
+->A switch statement is used to check one variable against multiple 
+possible values. It is often a cleaner alternative to writing many 
+if...else if statements.
+
+Keywords
+switch → Starts the switch statement.
+case → Checks if the value matches.
+break → Stops the switch after a match is found.
+default → Runs if no case matches.
+
+Syntex:-
+   switch (expression) 
+{
+    case value1:
+        // Code to execute if expression === value1
+        break;
+
+    case value2:
+        // Code to execute if expression === value2
+        break;
+
+    default:
+        // Code to execute if no case matches
+}//close of switch

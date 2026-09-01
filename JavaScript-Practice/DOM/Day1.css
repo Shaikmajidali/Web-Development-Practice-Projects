@@ -1,0 +1,38 @@
+#heading
+{
+color: brown;
+background-color: aqua;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+}
+
+.heading1
+{
+color: brown;
+background-color: aqua;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+}
+
+h2
+{
+color: brown;
+background-color: aqua;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+}
+
+/* using this for practial */
+h3
+{
+color: brown;
+background-color: aqua;
+font-family: 'Franklin Gothic Medium';
+text-align: center;
+}
+
+.hello
+{
+    color: bisque;
+    background-color: blueviolet;
+}

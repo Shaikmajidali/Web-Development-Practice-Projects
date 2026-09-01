@@ -1,0 +1,99 @@
+/*
+Arrays in js
+-> collection of items
+
+Syntex:-
+let names = ["ali", "shaik", "majid"];
+let marks = [45, 56 ,78, 90];
+let info = ["ali", 23, hyd];
+----------------------------------------------------
+Arrays indices
+-> this in the from of linear from 
+-> arrays are mutable we can change the arrays  
+->String is immutable not be change 
+
+syntex:-
+    arr[0], arr[1], arr[2]...
+
+----------------------------------------------- 
+
+Looping over an Array
+-> Print all elements of an array
+
+Using od the for-in-loop and for-of-loop
+
+| `for...in`                                         | `for...of`                                                         |
+| -------------------------------------------------- | ------------------------------------------------------------------ |
+| Iterates over **keys (indexes or property names)** | Iterates over **values**                                           |
+| Used for **objects** and arrays                    | Used for **arrays, strings, Map, Set**, and other iterable objects |
+| Returns the **index** for arrays                   | Returns the **actual element**                                     |
+| Syntax: `for (let key in object)`                  | Syntax: `for (let value of iterable)`                              |
+
+--------------------------------------------------------------------------------------
+Arrays Method
+
+types:-
+JavaScript Array Methods (Daily Use)
+
+1. push()
+   → Add element(s) to the end.
+
+2. pop()
+   → Remove the last element.
+
+3. shift()
+   → Remove the first element.
+
+4. unshift()
+   → Add element(s) to the beginning.
+
+5. toString()
+   → Convert array to a string.
+
+6. join()
+   → Join array elements into a string.
+
+7. concat()
+   → Merge two or more arrays.
+
+8. slice()
+   → Copy a portion of an array.
+
+9. splice()
+   → Add, remove, or replace elements.
+
+10. indexOf()
+    → Find the index of an element.
+
+11. includes()
+    → Check if an element exists.
+
+12. reverse()
+    → Reverse the array.
+
+13. sort()
+    → Sort the array.
+
+14. forEach()
+    → Loop through each element.
+
+15. map()
+    → Create a new array by modifying each element.
+
+16. filter()
+    → Create a new array with matching elements.
+
+17. reduce()
+    → Reduce the array to a single value.
+
+18. find()
+    → Find the first matching element.
+
+19. findIndex()
+    → Find the index of the first matching element.
+
+20. Array.isArray()
+    → Check if a value is an array.
+    ---------------------------------------------------------------------
+*/
+

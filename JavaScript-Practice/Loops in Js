@@ -1,0 +1,91 @@
+Loops in js 
+
+-> loops are used to execute a piece of code again & again
+types:-
+ 1.for-loop, 
+ 2.while-loop, 
+ 3.do-while-loop, 
+ 4.for-of-loop,
+ 5.for-in-loop.
+ 6.forEach-lopp
+
+--------------------------------------------------
+1.for-loop:-
+ Syntex:-
+
+for (Start; Stop?; Change) {
+    // Repeat this code
+}//close of for-loop
+
+Or remember it as:-
+
+Start → let i = 1
+Check → i <= 10
+Change → i++
+--------------------------------------------------
+Infinite Loop:-
+
+-> A Loop that never ends
+  Syntex:-
+   for (Start; true; Change) {
+    // Repeat this code
+       }
+---------------------------------------------------
+2.while-loop:-
+Syntex:-
+  while(condition)
+  {
+    //do some work
+  }//close of while-loop
+---------------------------------------------------
+3.do-while loop:-
+ Syntex:-
+  do{
+    //do some work
+    }
+  while(condition);
+----------------------------------------------------
+4.for-of loop:-
+
+->this loop is help for the 'string' and 'arrays' use.
+
+for(let val of strvar)
+{
+ //do some work
+}//close of for-of loop
+---------------------------------------------------
+5.for-in loop:-
+-> for-in loop are use for the 'objects' and 'object'.
+
+Syntex:-
+  for(let key in objvar)
+  {
+    //do some work
+  }//close of for-in loop
+---------------------------------------------------
+
+Difference Between for...in and for...of
+
+| `for...in`                                         | `for...of`                                                         |
+| -------------------------------------------------- | ------------------------------------------------------------------ |
+| Iterates over **keys (indexes or property names)** | Iterates over **values**                                           |
+| Used for **objects** and arrays                    | Used for **arrays, strings, Map, Set**, and other iterable objects |
+| Returns the **index** for arrays                   | Returns the **actual element**                                     |
+| Syntax: `for (let key in object)`                  | Syntax: `for (let value of iterable)`                              |
+-------------------------------------------------------------
+6.forEach-lopp:-
+
+->forEach() is an array method used to loop through every element of an 
+  array and perform an action on each element.
+
+ Syntax:-
+    array.forEach(function(value, index, array) 
+            {
+            });
+
+->Or using an arrow function:
+
+  Syntax:-
+    array.forEach((value, index, array) => 
+          {
+          }); 

@@ -1,0 +1,94 @@
+--> if you what to read the document from online then search this "MDN DOCS"
+-->"console.log" is use to log(print) a message to the console
+-->connecting the js file to html file using this tag "<script scr="index.js"></script>"
+
+=================================================
+Variables in js
+
+-> Variables are containers for data
+-> Js is 'Dynamically Typed' main that no use of the DataType you can use the Variables.
+-> in the Variables we can add
+   example:-
+   name1,      name2,      name3
+   full_Name   fullName_   _fullName
+   age$        $age        full$Age 
+
+-> Reserved words(key words) cannot be Variables names
+-> In Variables name should be in the 'camel case'
+  example:-
+  fullName, fullAge, studName.
+  
+ -------------------------------------------- 
+Now using of the 'Key Words'
+ -var, const, let.
+
+--var
+ -Variable can be re-declared & update. A globle scope variable
+ -var is the old use in the year 2015
+ syntex:-
+  var name="ali";
+
+--let
+ -Variable cannot be re-declared biut can updated.A block scope variable.
+ -let is the new to use 
+ syntex:-
+  let name="ali";
+
+--const
+ -Variable cannot be re-declared or update. A block scope Variable.
+ -const is also new to js and const Variable cannot be change in the js like final
+ syntex:-
+  const name="ali";
+
+----------------------------------------------------
+Now using of the 'Key Words' using block
+ -var, const, let.
+ syntex:-
+    {
+     this called block
+     let a=5;
+     const A=10;
+    }
+
+=================================================================
+Data Types in JS
+
+->in the data types we have two types is Primitive DataTypes, Non-primitive DataTypes.
+
+--Primitive DataTypes
+
+1.Number,  2.String, 
+3.Boolean, 4.Undefined, 
+5.Null,    6.BigInt, 
+     7.Symbol
+
+--Non-primitive DataTypes
+
+1.Object 
+--> collection of value
+example:-
+   using for students deatils like 'key' and 'value'
+
+syntex:- 
+let student = {
+    key      value
+
+    studName:  "Ali",
+    age:        23,
+    marks:      9.8,
+    isPass:     true
+}; 
+
+->for access this have to type syntex
+syntex:-
+1- console.log("NAME:",student.name3);
+2- console.log("NAME:",student["name3"]);
+
+->now update the stud age
+syntex:-
+student.age3 = student.age3 + 1;
+student["age3"] = student["age3"] + 1;
+student.name3="shaik";
+
+2.Array
+3.Function

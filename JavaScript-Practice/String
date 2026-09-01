@@ -1,0 +1,79 @@
+String in js
+
+-> String is a sequence of characters used to represent text
+
+types:-
+Create string:-
+let str = "Its me majid";
+
+String Length:-
+str.length
+
+String indices:-
+Str[0], str[1], str[2]
+===================================================
+
+Template Literals in js
+
+A way to have embedded expressions in strings  this a special string
+
+         `this is a template literal`
+
+      
+String  Interpolation 
+
+-> To crate string by doing substitution of placeholders
+ Syntex:-
+       `string text ${expression} string text`
+
+-> this ${expression } is aslo called as 'String  Interpolation'.     
+     
+----------------------------------------------------------------------
+Escape character:-
+
+types:-
+\n → N = New Line
+\t → T = Tab Space
+\\ → *Print *
+\" → Print "
+\' → Print '
+\b → Backspace (removes previous character)
+\r → Return to beginning of the line
+\f → Form feed (page break)
+=========================================================================
+String Method / function in js
+
+-> These are built - in function to manipulate a strings
+-> this method are not change the oraginl string,  
+but taking that and making a new string by using the method 
+
+Types:-
+. str.length                 // Returns the length of the string
+. str.toUpperCase()          // Converts to uppercase
+. str.toLowerCase()          // Converts to lowercase
+. str.trim()                 // Removes whitespace from both ends
+. str.trimStart()            // Removes whitespace from the beginning
+. str.trimEnd()              // Removes whitespace from the end
+. str.charAt(index)          // Returns the character at the given index
+. str.at(index)              // Returns the character at the given index (supports negative index)
+. str.indexOf(value)         // Returns the first index of the value
+. str.lastIndexOf(value)     // Returns the last index of the value
+. str.includes(value)        // Checks if the value exists
+. str.startsWith(value)      // Checks if the string starts with the value
+. str.endsWith(value)        // Checks if the string ends with the value
+. str.slice(start, end)      // Extracts part of the string
+. str.substring(start, end)  // Returns part of the string
+. str.replace(old, new)      // Replaces the first matching value
+. str.replaceAll(old, new)   // Replaces all matching values
+. str.concat(str2)           // Joins two or more strings
+. str.split(separator)       // Splits the string into an array
+. str.repeat(count)          // Repeats the string
+. str.padStart(length, char) // Pads the beginning of the string
+. str.padEnd(length, char)   // Pads the end of the string
+. str.search(value)          // Searches for a value and returns its index
+. str.match(pattern)         // Returns matching values
+. str.localeCompare(str2)    // Compares two strings
+. str.valueOf()              // Returns the primitive string value
+. str.toString()             // Converts to a string
+----------------------------------------------------------------------
+

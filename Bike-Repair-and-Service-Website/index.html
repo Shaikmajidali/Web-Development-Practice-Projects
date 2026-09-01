@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masterbyke</title>
+    <meta name="description" content="Professional motorcycle repair, servicing and maintenance. Certified mechanics, transparent pricing, 24x7 support.">
+
+    <!-- Google Fonts: Rajdhani (technical/industrial display) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================================
+         TOP BAR SECTION START
+    ================================= -->
+    <div class="topbar">
+        <div class="topbar__inner container">
+            <p class="topbar__brand">Best Bike Mechanic Company</p>
+            <a href="tel:8688287636" class="topbar__call">
+                <span class="topbar__call-label">Call us :</span>
+                <span class="topbar__call-number">9177***014</span>
+            </a>
+        </div>
+    </div>
+    <!-- ================================
+         TOP BAR SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         HEADER SECTION START
+    ================================= -->
+    <header class="site-header" id="siteHeader">
+
+        <!-- Main header info bar: phone / logo / email -->
+        <div class="header-main">
+            <div class="header-main__inner container">
+
+                <div class="header-info header-info--left">
+                    <span class="header-info__icon" aria-hidden="true">
+                        <!-- phone icon -->
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                    </span>
+                    <div class="header-info__text">
+                        <a href="tel:8688287636" class="header-info__value">9177***014</a>
+                        <span class="header-info__label">Request a Service</span>
+                    </div>
+                </div>
+
+                <div class="header-info header-info--left">
+                    <span class="header-info__icon" aria-hidden="true">
+                        <!-- clock icon -->
+                        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </span>
+                    <div class="header-info__text">
+                        <span class="header-info__value">24 X 7</span>
+                        <span class="header-info__label">Support</span>
+                    </div>
+                </div>
+
+                <!-- Company / Brand Area -->
+                <div class="header-brand">
+                    <!-- ADD YOUR GARAGE LOGO HERE -->
+                    <div class="logo-placeholder">
+                        <img src="image/logo.png">
+                    </div>
+                    <p class="header-brand__title">masterbyke</p>
+                    <p class="header-brand__subtitle">Multi-Brand Service Specialists</p>
+                </div>
+
+                <div class="header-info header-info--right">
+                    <span class="header-info__icon" aria-hidden="true">
+                        <!-- mail icon -->
+                        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6.5 12 13l8.5-6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <div class="header-info__text">
+                        <span class="header-info__label">E-mail</span>
+                        <a href="mailto:shaikmajidali36@gmail.com" class="header-info__value header-info__value--email">shaikmajidali36@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ================================
+             NAVIGATION BAR SECTION START
+        ================================= -->
+        <nav class="navbar" id="navbar">
+            <div class="navbar__inner container">
+
+                <!-- Compact logo, shown only on mobile once the full
+                     header info bar is hidden to save vertical space -->
+                <a href="#home" class="navbar__brand-mobile">
+                    <img src="image/logo.png" alt="masterbyke logo">
+                    <span>masterbyke</span>
+                </a>
+
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="#home" class="navbar__link is-active" data-section="home">Home</a></li>
+                    <li><a href="#about" class="navbar__link" data-section="about">About Us</a></li>
+                    <li><a href="#services" class="navbar__link" data-section="services">Services</a></li>
+                    <li><a href="#feedback" class="navbar__link" data-section="feedback">Feedback</a></li>
+                    <li><a href="#contact" class="navbar__link" data-section="contact">Contact Us</a></li>
+                </ul>
+
+                <a href="#booking" class="btn btn--primary btn--small navbar__cta">Book a Service</a>
+
+            </div>
+        </nav>
+        <!-- ================================
+             NAVIGATION BAR SECTION END
+        ================================= -->
+
+        <!-- ================================
+             BRANDS TICKER SECTION START
+             Lives inside the sticky header now (was a separate section
+             after the hero). Collapses/expands together with
+             .header-main on scroll via the same .is-scrolled class.
+             Badges are original circular monograms, not brand logo
+             artwork — actual manufacturer logos are trademarked, so a
+             clean custom badge is used to represent each make instead.
+        ================================= -->
+        <div class="header-ticker" id="headerTicker">
+    <div class="header-ticker__inner container">
+
+        <p class="header-ticker__label">
+            We Look After All Brands
+        </p>
+
+        <div class="header-ticker__marquee" aria-label="Motorcycle brands we service">
+
+            <div class="header-ticker__track">
+
+                <!-- Honda -->
+                <span class="brand-badge">
+                    <img src="image/honda.PNG" alt="Honda">
+                </span>
+
+                <!-- Yamaha -->
+                <span class="brand-badge">
+                    <img src="image/yamaha.JPG" alt="Yamaha">
+                </span>
+
+                <!-- Bajaj -->
+                <span class="brand-badge">
+                    <img src="image/bajaj.JPG" alt="Bajaj">
+                </span>
+
+                <!-- TVS -->
+                <span class="brand-badge">
+                    <img src="image/tvs.JPG" alt="TVS">
+                </span>
+
+                <!-- Royal Enfield -->
+                <span class="brand-badge">
+                    <img src="image/royal_enfield.JPG" alt="Royal Enfield">
+                </span>
+
+                <!-- Hero -->
+                <span class="brand-badge">
+                    <img src="image/hero.WEBP" alt="Hero">
+                </span>
+
+                <!-- Suzuki -->
+                <span class="brand-badge">
+                    <img src="image/suzuki.WEBP" alt="Suzuki">
+                </span>
+
+                <!-- KTM -->
+                <span class="brand-badge">
+                    <img src="image/ktm.PNG" alt="KTM">
+                </span>
+
+                <!-- Kawasaki -->
+                <span class="brand-badge">
+                    <img src="image/kawasaki.PNG" alt="Kawasaki">
+                </span>
+
+                <!-- Jawa -->
+                <span class="brand-badge">
+                    <img src="image/jawa.JPG" alt="Jawa">
+                </span>
+
+            <!-- Triumph -->
+            <span class="brand-badge">
+                 <img src="image/triumph.JPG" alt="Triumph">
+            </span>
+
+            <!-- BMW Motorrad -->
+            <span class="brand-badge">
+                 <img src="image/bmw.JPG" alt="BMW Motorrad">
+            </span>
+
+        <!-- Ducati -->
+        <span class="brand-badge">
+            <img src="image/ducati.SVG" alt="Ducati">
+        </span>
+
+        <!-- Harley-Davidson -->
+        <span class="brand-badge">
+            <img src="image/harley_davidson.WEBP" alt="Harley-Davidson">
+        </span>
+
+        <!-- Aprilia -->
+        <span class="brand-badge">
+             <img src="image/aprilia.PNG" alt="Aprilia">
+        </span>
+
+       
+        <!-- Benelli -->
+        <span class="brand-badge">
+            <img src="image/benelli.JPG" alt="Benelli">
+        </span>
+
+        <!-- Yezdi -->
+        <span class="brand-badge">
+           <img src="image/yezdi.PNG" alt="Yezdi">
+        </span>
+
+        <!-- Ather -->
+        <span class="brand-badge">
+          <img src="image/ather.PNG" alt="Ather">
+        </span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- ================================
+             BRANDS TICKER SECTION END
+        ================================= -->
+
+    </header>
+    <!-- ================================
+         HEADER SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         HERO SECTION START
+    ================================= -->
+    <section class="hero" id="home">
+        <div class="hero__grease-texture" aria-hidden="true"></div>
+        <div class="hero__inner container">
+
+            <div class="hero__content" data-animate="fade-right">
+                <p class="eyebrow">Certified &middot; Trusted &middot; Reliable</p>
+                <h1 class="hero__title">
+                    Welcome To<br>
+                    <span class="hero__title-accent">Professional Bike Repair Services</span>
+                </h1>
+                <p class="hero__text">
+                    Reliable motorcycle servicing, repairs and maintenance by experienced mechanics.
+                    From routine tune-ups to full engine overhauls, we keep every ride roadworthy.
+                </p>
+                <div class="hero__actions">
+                    <a href="#booking" class="btn btn--primary">Book A Service</a>
+                    <a href="#services" class="btn btn--outline">Our Services</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">20+</span>
+                        <span class="hero__stat-label">Years Experience</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">8,500+</span>
+                        <span class="hero__stat-label">Bikes Serviced</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">24x7</span>
+                        <span class="hero__stat-label">Roadside Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual" data-animate="fade-left">
+                <!-- Hero motorcycle image -->
+                <img class="hero__image" src="image/home.JPG" alt="Motorcycle repair garage">
+            </div>
+
+        </div>
+
+        <a href="#about" class="hero__scroll-cue" aria-label="Scroll to about section">
+            <span></span>
+        </a>
+    </section>
+    <!-- ================================
+         HERO SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         BOOKING POPUP SECTION START
+    ================================= -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="booking-popup" id="bookingPopup" role="dialog" aria-modal="true" aria-labelledby="bookingPopupTitle">
+
+            <button class="popup-close" id="popupClose" aria-label="Close booking popup">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+
+            <div class="booking-popup__visual">
+                <!-- ADD MOTORCYCLE IMAGE HERE -->
+                <div class="image-placeholder">
+                    <img class="hero__image" src="image/Book_Now.JPG" alt="Motorcycle repair garage">
+                </div>
+            </div>
+
+            <div class="booking-popup__content">
+                <h2 class="booking-popup__title" id="bookingPopupTitle">Real-Time Bike Repairs</h2>
+                <p class="booking-popup__text">
+                    Book a certified mechanic in 30 seconds. We come to you &mdash; home, office or roadside.
+                </p>
+
+                <ul class="trust-list">
+                    <li><span class="trust-list__icon">&#10003;</span> Verified Mechanic</li>
+                    <li><span class="trust-list__icon">&#10003;</span> Quality Service</li>
+                    <li><span class="trust-list__icon">&#10003;</span> Transparent Pricing</li>
+                    <li><span class="trust-list__icon">&#10003;</span> Customer Support</li>
+                </ul>
+
+                <form class="booking-form" id="bookingForm" novalidate>
+                    <label for="popupPhone" class="sr-only">Phone Number</label>
+                    <div class="phone-input">
+                        <span class="phone-input__code">+91</span>
+                        <input type="tel" id="popupPhone" name="popupPhone" placeholder="Phone Number" inputmode="numeric" maxlength="10" required>
+                    </div>
+                    <p class="form-message" id="popupFormMessage" role="alert" aria-live="polite"></p>
+                    <button type="submit" class="btn btn--cta btn--full">Book Now</button>
+                </form>
+
+                <p class="booking-popup__terms">By booking, you agree to our Terms of Service and Privacy Policy.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- ================================
+         BOOKING POPUP SECTION END
+    ================================= -->
+
+
+    <!-- Brands marquee has moved into the sticky header (see HEADER
+         SECTION above) so "We Look After All Brands" is visible from
+         the top of the page, not buried after the hero. -->
+
+
+    <!-- ================================
+         ABOUT SECTION START
+    ================================= -->
+    <section class="about" id="about">
+        <div class="about__inner container">
+
+            <div class="about__content" data-animate="fade-right">
+                <p class="eyebrow">Who We Are</p>
+                <h2 class="section-title">Passion for Bikes, Care for Riders</h2>
+
+                <p class="about__paragraph">
+                    We believe every ride should be smooth, safe and enjoyable. Our experienced mechanics
+                    provide reliable motorcycle repair and maintenance services for daily commuters, enthusiasts
+                    and long-distance riders.
+                </p>
+                <p class="about__paragraph">
+                    Our team handles everything from routine servicing and brake inspection to engine repair,
+                    electrical diagnostics and complete motorcycle maintenance &mdash; using the right tools and
+                    genuine parts every time.
+                </p>
+
+                <ul class="about__checklist">
+                    <li>Quality workmanship</li>
+                    <li>Experienced mechanics</li>
+                    <li>Genuine parts</li>
+                    <li>Transparent pricing</li>
+                    <li>Customer satisfaction</li>
+                    <li>Reliable service</li>
+                </ul>
+
+                <a href="#services" class="btn btn--primary">About More</a>
+            </div>
+
+            <div class="about__visual">
+                <!-- ADD YOUR ABOUT SECTION IMAGE HERE -->
+                <div class="image-placeholder about__image-main" data-animate="fade-left">
+                   <img src="image/about_back.JPG" alt="the of about back image">
+                </div>
+                <!-- Animated sport bike, continuously racing along a track -->
+                <div class="image-placeholder about__image-sub bike-track" data-animate="fade-left" data-delay="200">
+                    <svg class="bike-track__scene" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated illustration of a sport bike racing continuously around a track">
+                        <defs>
+                            <linearGradient id="btSkyGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#232b3d"/>
+                                <stop offset="100%" stop-color="#10131a"/>
+                            </linearGradient>
+                            <linearGradient id="btRoadGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#2e3548"/>
+                                <stop offset="100%" stop-color="#181e2a"/>
+                            </linearGradient>
+                        </defs>
+
+                        <rect x="0" y="0" width="600" height="300" fill="url(#btSkyGrad)"/>
+
+                        <!-- Parallax background hills — two identical shapes side by side,
+                             both scroll left together so the loop is seamless -->
+                        <g class="bike-track__bg-scroll">
+                            <path d="M0,190 Q60,155 120,190 T240,190 T360,190 T480,190 T600,190 V300 H0 Z" fill="#181e2a" opacity="0.6"/>
+                            <path d="M600,190 Q660,155 720,190 T840,190 T960,190 T1080,190 T1200,190 V300 H600 Z" fill="#181e2a" opacity="0.6"/>
+                        </g>
+
+                        <!-- Track surface -->
+                        <rect x="0" y="190" width="600" height="110" fill="url(#btRoadGrad)"/>
+                        <rect x="0" y="188" width="600" height="4" fill="#d4a017" opacity="0.5"/>
+
+                        <!-- Center lane markings, scrolling toward the viewer -->
+                        <g class="bike-track__lane">
+                            <line x1="-40" y1="245" x2="640" y2="245" stroke="#f0ece1" stroke-width="6" stroke-dasharray="30 26" stroke-linecap="round"/>
+                        </g>
+
+                        <!-- Motion speed lines trailing the bike -->
+                        <g stroke="#d4a017" stroke-width="3" stroke-linecap="round">
+                            <line class="speed-line speed-line--1" x1="150" y1="205" x2="192" y2="205"/>
+                            <line class="speed-line speed-line--2" x1="138" y1="220" x2="186" y2="220"/>
+                            <line class="speed-line speed-line--3" x1="152" y1="236" x2="196" y2="236"/>
+                        </g>
+
+                        <ellipse class="bike-track__shadow" cx="300" cy="257" rx="74" ry="9" fill="#000000" opacity="0.35"/>
+
+                        <!-- Bike group: rear wheel/tail on the left (trailing),
+                             front wheel/nose on the right (leading, direction
+                             of travel), matching the trailing exhaust flame
+                             and speed lines on the left. -->
+                        <g class="bike-track__bike">
+
+                            <!-- Swingarm / lower frame linking the two wheels -->
+                            <path d="M253,231 L300,221 L342,227" stroke="#181e2a" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+                            <!-- Rear wheel -->
+                            <g class="bike-track__wheel">
+                                <circle cx="245" cy="235" r="26" fill="#10131a" stroke="#9aa1b3" stroke-width="3"/>
+                                <circle cx="245" cy="235" r="19" fill="none" stroke="#3a4257" stroke-width="1.5"/>
+                                <g stroke="#6b7280" stroke-width="2" stroke-linecap="round">
+                                    <line x1="245" y1="235" x2="245" y2="212"/>
+                                    <line x1="245" y1="235" x2="264.4" y2="223.5"/>
+                                    <line x1="245" y1="235" x2="257.2" y2="255.7"/>
+                                    <line x1="245" y1="235" x2="232.8" y2="255.7"/>
+                                    <line x1="245" y1="235" x2="225.6" y2="223.5"/>
+                                </g>
+                                <circle cx="245" cy="235" r="7" fill="#9aa1b3"/>
+                                <circle cx="245" cy="235" r="3" fill="#10131a"/>
+                            </g>
+
+                            <!-- Front wheel -->
+                            <g class="bike-track__wheel">
+                                <circle cx="355" cy="235" r="26" fill="#10131a" stroke="#9aa1b3" stroke-width="3"/>
+                                <circle cx="355" cy="235" r="19" fill="none" stroke="#3a4257" stroke-width="1.5"/>
+                                <g stroke="#6b7280" stroke-width="2" stroke-linecap="round">
+                                    <line x1="355" y1="235" x2="355" y2="212"/>
+                                    <line x1="355" y1="235" x2="374.4" y2="223.5"/>
+                                    <line x1="355" y1="235" x2="367.2" y2="255.7"/>
+                                    <line x1="355" y1="235" x2="342.8" y2="255.7"/>
+                                    <line x1="355" y1="235" x2="335.6" y2="223.5"/>
+                                </g>
+                                <circle cx="355" cy="235" r="7" fill="#9aa1b3"/>
+                                <circle cx="355" cy="235" r="3" fill="#10131a"/>
+                            </g>
+
+                            <!-- Front fork, compresses slightly on its own rhythm
+                                 so the suspension reads as absorbing bumps -->
+                            <g class="bike-track__fork">
+                                <line x1="351" y1="199" x2="358" y2="233" stroke="#6b7280" stroke-width="4" stroke-linecap="round"/>
+                            </g>
+
+                            <!-- Main fairing / body -->
+                            <path d="M232,228
+                                     C224,220 228,207 244,202
+                                     L274,194
+                                     C295,189 316,190 329,197
+                                     L348,206
+                                     C357,210 359,219 353,226
+                                     L339,230
+                                     C314,222 284,220 259,224
+                                     Z" fill="#bf5b23"/>
+
+                            <!-- Tank highlight stripe -->
+                            <path d="M270,197 C289,192 307,193 319,199 L315,206 C300,201 285,201 274,205 Z" fill="#d4a017" opacity="0.9"/>
+
+                            <!-- Windscreen -->
+                            <path d="M330,199 L347,191 L354,200 L338,207 Z" fill="#e9e4d8" opacity="0.8"/>
+
+                            <!-- Seat / tail hump -->
+                            <path d="M232,228 C221,222 219,212 232,208 L253,207 L259,222 Z" fill="#10131a"/>
+
+                            <!-- Exhaust pipe + flame, trailing at the rear -->
+                            <rect x="204" y="227" width="29" height="9" rx="4" fill="#9aa1b3"/>
+                            <path class="bike-track__exhaust-flame" d="M204,231 Q186,231 180,227 Q189,232 180,238 Q192,236 204,236 Z" fill="#d4a017"/>
+
+                            <!-- Rider, tucked forward toward the front wheel -->
+                            <g class="bike-track__rider" fill="#10131a">
+                                <path d="M296,196 Q285,175 302,159 Q321,152 327,168 Q331,182 317,190 Q305,197 296,196 Z"/>
+                                <circle cx="316" cy="155" r="12" fill="#181e2a"/>
+                                <circle cx="320" cy="152" r="3.2" fill="#4a5570"/>
+                                <path d="M300,178 Q321,178 336,196 L341,206 L330,209 Q319,192 298,186 Z"/>
+                                <path d="M296,196 Q280,204 272,220 Q268,229 273,234 L283,230 Q286,214 300,204 Z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================================
+         ABOUT SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         SERVICES SECTION START
+    ================================= -->
+    <section class="services" id="services">
+        <div class="services__inner container">
+
+            <div class="section-heading" data-animate="fade-up">
+                <p class="eyebrow">What We Offer</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete motorcycle care under one roof, priced honestly and delivered by certified mechanics.</p>
+            </div>
+
+            <div class="services__grid" id="servicesGrid">
+
+                <!-- Service Card 1 -->
+                <article class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR GENERAL SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_1.JPG" alt="using to showing service first image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">General Bike Service</h3>
+                        <p class="service-card__desc">Complete inspection, cleaning, lubrication and basic maintenance.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 2 -->
+                <article class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR REPAIR SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_2.WEBP" alt="using to showing service second image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Repair Service</h3>
+                        <p class="service-card__desc">Professional repair for common motorcycle mechanical and maintenance problems.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 3 -->
+                <article class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR ENGINE REPAIR IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_3.JPG" alt="using to showing service third image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Engine Repair</h3>
+                        <p class="service-card__desc">Engine inspection, diagnosis, repair and maintenance by experienced mechanics.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 4 -->
+                <article class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR BRAKE SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_4.JPG" alt="using to showing service fourth image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Brake Service</h3>
+                        <p class="service-card__desc">Brake pad, disc and cable inspection with safety-first calibration.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 5 -->
+                <article class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR OIL CHANGE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_5.WEBP" alt="using to showing service  fifth image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Oil Change</h3>
+                        <p class="service-card__desc">Engine oil and filter replacement using recommended grade lubricants.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 6 -->
+                <article class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR BATTERY SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_6.PNG" alt="using to showing service sixth image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Battery Service</h3>
+                        <p class="service-card__desc">Battery health check, terminal cleaning and replacement if required.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 7 -->
+                <article class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR TYRE SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_7.WEBP" alt="using to showing service seventh image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Tyre Service</h3>
+                        <p class="service-card__desc">Puncture repair, alignment check and tyre replacement.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 8 -->
+                <article class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR ELECTRICAL REPAIR IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_8.WEBP" alt="using to showing service eighth image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Electrical Repair</h3>
+                        <p class="service-card__desc">Wiring, headlight, indicator and starter motor diagnostics and repair.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 9 -->
+                <article class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR CHAIN AND SPROCKET SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_9.WEBP" alt="using to showing service ninth image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Chain &amp; Sprocket Service</h3>
+                        <p class="service-card__desc">Cleaning, lubrication, tensioning and sprocket wear inspection.</p>
+                    </div>
+                </article>
+
+                <!-- Service Card 10 -->
+                <article class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card__image">
+                        <!-- ADD YOUR PICKUP AND DROP SERVICE IMAGE HERE -->
+                        <div class="image-placeholder"><img src="image/service_img_10.PNG" alt="using to showing service  tenth image"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Pickup &amp; Drop Service</h3>
+                        <p class="service-card__desc">We collect your bike from your doorstep and return it once serviced.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================================
+         SERVICES SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         CUSTOMER FEEDBACK SECTION START
+    ================================= -->
+    <section class="feedback" id="feedback">
+        <div class="feedback__inner container">
+
+            <div class="section-heading" data-animate="fade-up">
+                <p class="eyebrow">Testimonials</p>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Demo reviews shown below &mdash; replace with your real customer feedback.</p>
+            </div>
+
+            <div class="feedback-slider" id="feedbackSlider">
+                <div class="feedback-slider__track" id="feedbackTrack">
+
+                    <!-- Review Card 1 -->
+                    <div class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-card__text">"Excellent bike service. The mechanic was professional, punctual and explained everything clearly."</p>
+                        <div class="review-card__meta">
+                            <!-- ADD CUSTOMER PHOTO HERE (OPTIONAL) -->
+                            <div class="review-card__avatar">RK</div>
+                            <div>
+                                <p class="review-card__name">Rahul Kumar</p>
+                                <p class="review-card__date">12 July 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-card__text">"Booked a pickup and drop service &mdash; super convenient and the pricing was exactly as quoted."</p>
+                        <div class="review-card__meta">
+                            <div class="review-card__avatar">SP</div>
+                            <div>
+                                <p class="review-card__name">Sanjana Patil</p>
+                                <p class="review-card__date">28 June 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="review-card">
+                        <div class="review-card__stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                        <p class="review-card__text">"Engine repair took a bit longer than expected, but the quality of work was worth the wait."</p>
+                        <div class="review-card__meta">
+                            <div class="review-card__avatar">AM</div>
+                            <div>
+                                <p class="review-card__name">Arjun Mehta</p>
+                                <p class="review-card__date">03 June 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 4 -->
+                    <div class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-card__text">"Honest diagnosis, genuine spare parts and a mechanic who actually cares about the job."</p>
+                        <div class="review-card__meta">
+                            <div class="review-card__avatar">PN</div>
+                            <div>
+                                <p class="review-card__name">Priya Nair</p>
+                                <p class="review-card__date">17 May 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="feedback-slider__controls">
+                    <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="Previous review">&#8592;</button>
+                    <div class="feedback-slider__dots" id="sliderDots"></div>
+                    <button class="slider-btn slider-btn--next" id="sliderNext" aria-label="Next review">&#8594;</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================================
+         CUSTOMER FEEDBACK SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         CONTACT SECTION START
+    ================================= -->
+    <section class="contact" id="contact">
+        <div class="contact__inner container">
+
+            <div class="section-heading" data-animate="fade-up">
+                <p class="eyebrow">Get In Touch</p>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+
+            <div class="contact__grid">
+
+                <div class="contact-info" data-animate="fade-right">
+
+                    <div class="contact-info__item">
+                        <span class="contact-info__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <p class="contact-info__label">Phone</p>
+                            <a href="tel:8688287636" class="contact-info__value">8688287636</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <span class="contact-info__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6.5 12 13l8.5-6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <p class="contact-info__label">Email</p>
+                            <a href="mailto:masterbykeservice@gmail.com" class="contact-info__value">masterbykeservice@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <span class="contact-info__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </span>
+                        <div>
+                            <p class="contact-info__label">Service Hours</p>
+                            <p class="contact-info__value">24 &times; 7 Support</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <span class="contact-info__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg>
+                        </span>
+                        <div>
+                            <p class="contact-info__label">Location</p>
+                            <!-- ADD GARAGE ADDRESS HERE -->
+                            <p class="contact-info__value">All over Hyderabad</p>
+                            <!-- REPLACE href BELOW WITH YOUR REAL GOOGLE MAPS LINK -->
+                            <!-- <a href="#" class="btn btn--outline btn--small contact-info__directions" id="directionsBtn">Get Directions</a> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <form class="contact-form" id="contactForm" data-animate="fade-left" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cFullName">Full Name</label>
+                            <input type="text" id="cFullName" name="cFullName" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cPhone">Phone Number</label>
+                            <input type="tel" id="cPhone" name="cPhone" placeholder="10-digit mobile number" inputmode="numeric" maxlength="10" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cEmail">Email</label>
+                            <input type="email" id="cEmail" name="cEmail" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cBikeModel">Bike Model</label>
+                            <input type="text" id="cBikeModel" name="cBikeModel" placeholder="e.g. Royal Enfield Classic 350" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="cServiceRequiredLabel">Service(s) Required</label>
+                        <div class="service-checklist" id="cServiceChecklist" role="group" aria-labelledby="cServiceRequiredLabel">
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="General Bike Service">
+                                <span>General Bike Service</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Repair Service">
+                                <span>Repair Service</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Engine Repair">
+                                <span>Engine Repair</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Brake Service">
+                                <span>Brake Service</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Oil Change">
+                                <span>Oil Change</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Battery Service">
+                                <span>Battery Service</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Tyre Service">
+                                <span>Tyre Service</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Electrical Repair">
+                                <span>Electrical Repair</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Chain &amp; Sprocket Service">
+                                <span>Chain &amp; Sprocket Service</span>
+                            </label>
+                            <label class="service-checklist__item">
+                                <input type="checkbox" name="cServiceRequired" value="Pickup &amp; Drop Service">
+                                <span>Pickup &amp; Drop Service</span>
+                            </label>
+                        </div>
+                        <p class="form-hint">Select one or more services.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cMessage">Message</label>
+                        <textarea id="cMessage" name="cMessage" rows="4" placeholder="Tell us more about the issue"></textarea>
+                    </div>
+
+                    <p class="form-message" id="contactFormMessage" role="alert" aria-live="polite"></p>
+
+                    <button type="submit" class="btn btn--cta btn--full">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================================
+         CONTACT SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         FOOTER SECTION START
+    ================================= -->
+    <footer class="footer">
+        <div class="footer__inner container">
+
+            <div class="footer__col footer__col--about">
+                <p class="footer__brand">Best Bike Mechanic Company</p>
+                <p class="footer__desc">
+                    Your trusted neighborhood motorcycle garage &mdash; honest repairs, genuine parts
+                    and mechanics who treat every bike like their own.
+                </p>
+                <div class="footer__socials">
+                    <!-- ADD YOUR SOCIAL MEDIA LINKS HERE -->
+                    <a href="#" class="footer__social-icon" aria-label="Facebook">f</a>
+                    <a href="#" class="footer__social-icon" aria-label="Instagram">ig</a>
+                    <a href="#" class="footer__social-icon" aria-label="YouTube">yt</a>
+                    <a href="#" class="footer__social-icon" aria-label="WhatsApp">wa</a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <p class="footer__heading">Quick Links</p>
+                <ul class="footer__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <p class="footer__heading">Contact</p>
+                <ul class="footer__links">
+                    <li>Phone: <a href="tel:9177***014">9177***014</a></li>
+                    <li>Email: <a href="mailto:shaikmajidali36@gmail.com">shaikmajidali36@gmail.com</a></li>
+                    <li>All over Hyderabad</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Your Bike Repair Garage. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- ================================
+         FOOTER SECTION END
+    ================================= -->
+
+
+    <!-- ================================
+         FLOATING WHATSAPP BUTTON START
+    ================================= -->
+    <a href="#" class="whatsapp-float" id="whatsappBtn" aria-label="Book with WhatsApp" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-float__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.657 4.53 1.797 6.393L4 29l7.8-1.75A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.6c-1.98 0-3.83-.56-5.4-1.53l-.386-.23-4.63 1.04 1.06-4.51-.25-.4A9.55 9.55 0 0 1 6.4 15c0-5.302 4.298-9.6 9.6-9.6s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zm5.27-7.19c-.29-.145-1.71-.845-1.975-.94-.265-.096-.458-.145-.65.145-.193.29-.747.94-.916 1.134-.168.193-.337.217-.626.072-.29-.145-1.223-.451-2.33-1.437-.861-.768-1.442-1.716-1.611-2.006-.169-.29-.018-.446.127-.59.13-.13.29-.338.435-.507.145-.169.193-.29.29-.483.096-.193.048-.362-.024-.507-.072-.145-.65-1.567-.891-2.146-.235-.564-.474-.488-.65-.497l-.554-.01c-.193 0-.507.072-.772.362-.265.29-1.012.99-1.012 2.412 0 1.423 1.036 2.797 1.18 2.99.145.193 2.04 3.115 4.943 4.368.69.298 1.229.476 1.649.61.693.22 1.323.19 1.822.115.556-.083 1.71-.699 1.951-1.375.241-.676.241-1.255.169-1.375-.072-.12-.265-.193-.554-.338z"/></svg>
+        </span>
+        <span class="whatsapp-float__label">Book with WhatsApp</span>
+    </a>
+    <!-- ================================
+         FLOATING WHATSAPP BUTTON END
+    ================================= -->
+
+
+    <!-- ================================
+         FLOATING CALL NOW BUTTON START
+    ================================= -->
+    <a href="tel:8688287636" class="call-float" id="callNowBtn" aria-label="Call us now">
+        <span class="call-float__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" fill="currentColor"/></svg>
+        </span>
+        <span class="call-float__label">Call Now</span>
+    </a>
+    <!-- ================================
+         FLOATING CALL NOW BUTTON END
+    ================================= -->
+
+    <script src="script.js"></script>
+</body>
+</html>

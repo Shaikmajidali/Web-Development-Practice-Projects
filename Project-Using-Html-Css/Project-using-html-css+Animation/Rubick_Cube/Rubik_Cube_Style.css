@@ -1,0 +1,197 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+}
+
+#maindiv{
+       height: 400px;
+       width: 400px;
+       border-radius: 9px;
+       cursor: pointer;
+       position: relative;
+  transform-style: preserve-3d; 
+  animation: rotateCube 20s infinite linear;
+}   
+#maindiv div {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Position each face */
+.front  { transform: rotateY(0deg) translateZ(200px); background-color: #406093;}
+.back   { transform: rotateY(180deg) translateZ(200px); background-color: aliceblue}
+.right  { transform: rotateY(90deg) translateZ(200px);background-color: aqua }
+.left   { transform: rotateY(-90deg) translateZ(200px); background-color: beige}
+.top    { transform: rotateX(90deg) translateZ(200px); background-color: bisque}
+.bottom { transform: rotateX(-90deg) translateZ(200px);background-color: blue }
+
+/* Rotation animation */
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.boxcube{
+         width: 10px;
+         height: 10px;
+          margin-left: 1px;
+         border-radius: 5px;
+         border: 1px solid #262626;
+         background-color:#406093; 
+         display: flex;
+         flex-wrap: wrap;
+        }        
+
+        .Hearts{
+                width: 50px;
+                height: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+
+                animation: Beating 2s steps(3) infinite;
+        }
+        @keyframes Beating
+        {
+          0%{
+                transform: scale(1);
+          }
+         50%{
+                transform: scale(1.3);
+          }
+          100%{
+                transform: scale(1);
+          }
+        }
+
+        .face
+        {
+            width: 50px;
+                height: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+          animation: moving 5s steps(4) infinite;  
+        }
+        @keyframes moving 
+        {
+          0%{
+                transform: translate(1px) scale(1);
+          }
+          25%{
+                transform: translate(2px);
+          }
+          50%{
+                transform: translate(3px);
+          }
+           75%{
+                transform: translate(-2px);
+          }
+          100%{
+                transform: translate(0px) scale(2);
+          }
+        }
+
+        .roundHearts
+        {
+            width: 50px;
+                height: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+          animation: round 6s steps(4) infinite;  
+        }
+        @keyframes round
+        {
+           0%{
+                transform: rotatey(0deg);
+           }
+           25%{
+                transform: rotatey(110deg);
+           }
+            50%{
+                transform: rotatey(180deg);
+           }
+            75%{
+                transform: rotatey(250deg);
+           }
+           100%{
+                transform: rotatey(360deg);
+           }
+
+        }
+
+        .glow
+        {
+            width: 50px;
+                height: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+          animation: light 5s steps(4) infinite;  
+        }
+        @keyframes light{
+         0%{
+               transform: translateX(0px);
+         }
+          25%{
+                transform: translateX(4px);
+         }
+          50%{
+                transform: translateY(5px);
+         }
+          75%{
+                transform: translateY(9px);
+         }
+         100%{
+                transform: translateX(0px);
+         }
+        }
+
+        .round
+        {
+            width: 50px;
+                height: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+          animation: ok 7s steps(4) infinite;  
+        }
+        @keyframes ok{
+         0%{
+               transform: translateX(0px) rotateX(0deg);
+         }
+          25%{
+                transform: translateX(4px)  rotateX(100deg);;
+         }
+          50%{
+                transform: translateY(5px)  rotateY(200deg);;
+         }
+          75%{
+                transform: translateY(9px)  rotateY(360deg);;
+         }
+         100%{
+                transform: translateX(0px)  rotateX(0deg);;
+         }
+        }
+
+        

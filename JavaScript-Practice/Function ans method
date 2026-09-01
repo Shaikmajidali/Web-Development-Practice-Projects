@@ -1,0 +1,113 @@
+/*
+
+Function in js 
+
+-> Block of codeperfrome a specific
+   task cen be invoked whenever needed
+-> A function is an independent block of code.
+-> It can be called directly by its name.
+-> It does not belong to any object.   
+-> and also can be use for redundancy(repeat)
+-> function parameter are also called as 
+   local variable in function thay stay in the 
+   block scop
+
+Syntex:-
+
+ Function functionName()
+ {
+   //do some work
+ }//close of funcation
+
+ function finctionName(param1, param2...)
+ {
+   //do some work
+ }//close of function
+
+calling function
+Syntex:-
+
+functionName();
+
+-------------------------------------------------------
+Arrow Function 
+
+->Compact way of writing  function
+
+const funcationName = (Param1, Param2..) =>
+  {
+  //do some work
+  }
+
+----------------------Methods--------------------------------
+
+forEach loop in Arrays
+
+->CallbckFuncion : Here, it is a function to execute 
+                 for each element in the array 
+                 
+-> * Acallback is a function passed as an arguments
+     to another function      
+-> in this we have two types one is "Normal-forEach" and other is "Arrow-forEach"     
+
+->also called as higher order function like in the forEcah loop when we use
+  a function then that function called as higher order function 
+
+->In this forEach-loop we have a three thing "value"(elements), "index", "arrays"(name of array)   
+  
+ ----normal forEach-loop
+    Syntex:-
+   
+   arr.forEach((val , index , arrays) =>
+      {
+
+         consiole.log(val);
+
+      })
+
+-----Arrow forEach-loop
+    Syntex:-
+    
+  arr2.forEach((val , index , arr2) =>
+       {
+       console.log( index , val , arr2);             
+       }
+       );  
+
+---some more Array Method---
+
+Map:-
+Creates a new array with the results of some operation.
+The value its callback return are used to form  new array
+ arr.map(callbackFnx(value, index, array))
+
+Syntex:-
+let newArr = arr.map((val) => {
+  return val * 2;
+  })
+
+--------------------------------------------------  
+
+filter:-
+Creates a new arrays of elements that give true for a condition/filter 
+eg: all even elements
+
+Syntex:-
+
+let newArr = Arr.filter( (val) => {
+  return val % 2 == 0;
+})
+
+-------------------------------------------------------
+
+Reduce:-
+Performs some operation & reduces the array to a single value.
+it reture that single value
+
+Syntex:-
+
+const output = arr.reduce((res, curr) =>{
+   return res + curr;
+  })
+
+ */

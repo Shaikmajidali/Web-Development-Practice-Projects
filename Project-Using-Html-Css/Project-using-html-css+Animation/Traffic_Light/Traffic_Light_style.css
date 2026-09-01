@@ -1,0 +1,111 @@
+body{
+     background-image: url("https://images.pexels.com/photos/1701425/pexels-photo-1701425.jpeg?cs=srgb&dl=pexels-s-n-b-m-827240-1701425.jpg&fm=jpg");
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: center;
+    }
+.maindiv{
+         width: 440px;
+         height: 600px;
+         background-color: aqua;
+        margin-top: 5px;
+        margin-left: 500px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+        border-radius: 10px;
+        color:white;
+        font-size:25px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius:10px;
+        border:1px solid rgba(255,255,255,0.3);
+        }
+#box{
+      width: 30%;
+      height: 36%;
+      background-color: #11224E;
+      margin-top: 50px;
+      margin-left: 160px;
+      margin-bottom: 500px;
+      margin-right: 50px;
+      border-radius: 30px;
+      padding-top: 5%;
+    }        
+#redlight{
+          width: 40%;
+          height: 25%;
+          border: 3px solid #262626;
+          border-radius: 50%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          margin-left: 25%;
+          background-color: #FB4141;
+         }    
+
+/*box-shadow: horizontal vertical blur color;*/
+
+#redlight:hover {
+            background-color: #ff3030;
+            transform: scale(1.1);
+            box-shadow: 
+                       0 0 25px #FF4646,
+                       0 0 30px #FF3838,
+                       0 0 35px #FF5555;
+                }               
+
+#yellowlight{
+          width: 40%;
+          height: 25%;
+          border: 3px solid #262626;
+          border-radius: 50%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          margin-left: 25%;
+          background-color: 	#FAFA37;
+         }
+
+#yellowlight:hover {
+           background-color: yellow;
+           transform: scale(1.1);
+           box-shadow: 
+                      0 0 25px #FFFF38,
+                      0 0 30px #FFFF66,
+                      0 0 35px #FFFF66;
+                }   
+
+
+  #greenlight{
+          width: 40%;
+          height: 25%;
+          border: 3px solid #262626;
+          border-radius: 50%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          margin-left: 25%;
+          background-color: greenyellow;
+         }           
+#greenlight:hover {
+           background-color:  #3AA655;
+           transform: scale(1.1);
+           box-shadow: 
+                      0 0 25px  #76ee00,
+                      0 0 30px  #66cd00,
+                      0 0 35px  #7fff00;
+                }                           
+.box1{
+      width: 10%;
+      height: 120%;
+      background-color: #11224E;
+      margin-left: 59px;
+      margin-bottom: 500px;
+      margin-right: px;
+      padding-top: 5%;
+    }   
+span {
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 65px;
+} 
+ 
+ 

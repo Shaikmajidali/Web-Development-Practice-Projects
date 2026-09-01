@@ -1,0 +1,58 @@
+Window object
+
+->The Window object represents n open Window in a beowser.
+  it is browser's object (not a javaScript) & is automatically 
+  created by browser
+
+  it is a globle object with lots of properties & methods.
+---------------------------------------------------------------
+
+What is DOM?
+
+->When a web page is loaded, the browser creates a Document object model(DOM)
+  of the page 
+
+                           Window
+                              |
+                           Document
+                              |
+                            HTML
+                           /     \
+                          /       \
+                      Head          Body
+                    /  |  \         |   \
+                   /   |   \        |    \
+               Meta  Title  Link   Div   Script
+                                 / | \ \
+                                /  |  \  \
+                              Img  H1 P Div
+
+->console.log() use for pranting
+->console.dir() use to see the document proptes and methos like "console.dir(window.document)" using in the inspect 
+=================================================================
+
+Dom Manipulation
+
+Selecting with id:-
+document.getElementById("Myid")
+
+Selecting with class:-
+document.getElementByClass("Myclass")
+
+Selecting with Tag:-
+document.getElementByTagName("p")
+
+---------------------------------------------------------
+Query Selector
+
+document.querySelector("myId/myClass/tag");//returns first elements
+
+document.querySelectorAll("myId/myClass/tag");//returns a NodeList
+
+----------------------------------------------------------
+Properties
+
+.tagName    : returns tag for elements nodes
+.innerText  : return the text content of the elements and all its childern
+.innerHtml   : returns the plain text or Html contents in the elements
+.textContent :returns textual content even for hidden elements

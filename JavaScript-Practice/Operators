@@ -1,0 +1,66 @@
+Comments in JS
+
+->Part of code which is not exexuted 
+syntx:-
+
+ //this is a single line comment
+
+ /*
+ this is a multi-line comment.
+ */
+========================================================================
+ Operators in Js
+------------------------------------------------------
+ Arithmetic Operators:-
+ example:-
+      +, -, *, /, %, **.
+
+  this '**' use for the power of number like this 2^5.     
+ 
+-------------------------------------------------------
+ Unary Operators:-
+ example:-
+     ++, --.
+-------------------------------------------------------
+Assignments Operators:-
+example:-
+    =, +=, -=, *=, %=, **=.  
+->this operater is use ofor the short cut for this 
+-> a + = 1;  (a = a + 1)    
+-> a - = 1;  (a = a - 1)   
+-> a * = 1;  (a = a * 1)   
+-> a % = 1;  (a = a % 1)   
+-> a ** = 1; (a = a ** 1)   
+-------------------------------------------------------    
+Comparison Operators:-
+example:-
+        ==, !=, >, >=, <, <=.
+
+stricl version:-
+            ===, !==.
+-------------------------------------------------------
+Logical Operators:-
+example:-
+       &&, ||, !.
+-------------------------------------------------------
+====================================================================
+Ternary Operators:-
+-> condition ? true output : false output
+-> simple, compact if-else
+
+type:-
+ ?, :.
+
+ example:-
+ let age = 25;
+ let result = age  >= 18 ? "adult" : "not adult";
+
+  //one more type
+
+ let age1 = 25;
+ let result1 = age1 >= 18 ? console.log("adult") : console.log("not adult");
+  
+->condition → The condition to check.
+? → Separates the condition from the result if it's true.
+: → Separates the true result from the false result.
+=======================================================================
